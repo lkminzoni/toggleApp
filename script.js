@@ -9,13 +9,11 @@ function doTheTrick(theClickedOne){
     if(good.checked && cheap.checked && fast.checked){
         if(good.checked === theClickedOne){
             fast.checked = false;
-        }
-
-        if(cheap === theClickedOne){
+        }else if(cheap === theClickedOne){
             good.checked = false;
-        }
-
-        if(fast === theClickedOne){
+        }else if(fast === theClickedOne){
+            cheap.checked = false;
+        }else{
             cheap.checked = false;
         }
     }
